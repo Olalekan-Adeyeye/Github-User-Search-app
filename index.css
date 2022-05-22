@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css?family=Sen&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Sen, Calibri, 'Trebuchet MS', sans-serif;
+    /* background-color: rgba(184, 182, 178, 0.10); */
+    background-color: whitesmoke;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.body{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+.wrapper{
+    margin: 10px 0px;
+    width: 450px;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    pointer-events: fill;
+}
+.header-name{
+    font-weight: 900;
+}
+.light-dark-mode{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.light-dark{
+    font-size: 10px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+.light-dark-img{
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    margin-left: 10px;
+}
+
+.form-wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* background-color: rgba(114, 119, 76, 0.402); */
+    height: 40px;  
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.shadow{
+    box-shadow: 0px 0px 5px 0px grey;
+}
+.darkmode-wrapper{
+    color: white;
+    box-shadow: 0px 0px 5px 0px whitesmoke;
+    /* border: 3px solid white; */
+}
+
+.form-wrapper form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 450px;
+    /* border: 2px solid black; */
+    margin: 5px;
+}
+.form-wrapper form i{
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+}
+.form-wrapper form input{
+    width: 330px;
+    height: 30px;
+    margin: 0px 5px 0px 0px;
+    background: none;
+    border: 0px solid red;
+    outline: none;
+    padding: 0px 10px;   
+    font-weight: 500;
+}
+
+.input-color-change{
+    color: white;
+}
+
+.form-wrapper form button{
+    width: 100px;
+    height: 30px;
+    background-color: black;
+    border: 0px solid whitesmoke;
+    border-radius: 10px;
+    outline: none;
+    color: white;
+    font-weight: 600;
+   margin-right: 5px;
+}
+.darkmode-button{
+    background-color: white !important;
+    color: black !important;
+    border: 0px solid whitesmoke;
+}
+.form-wrapper form button:hover{
+    background-color: royalblue;
+    color: aliceblue;
+}
+
+
+.github-data-wrapper{
+    margin-top: 10px;
+    width: inherit;
+    min-height: 300px;
+    padding: 20px;
+    /* border: 2px solid blue; */
+    border-radius: 10px;
+    /* background-color: rgba(114, 119, 76, 0.402); */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: .5s;
+}
+.github-darkdata-wrapper{
+    color: white;
+}
+.github-profile-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100px;
+}
+.github-profile-imgWrapper{
+    width: 80px;
+    height: 80px;
+}
+.github-profile-img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+}
+.github-profile-secondaryInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 20px;
+}
+
+.github-profile-secondaryInfo h3, p{
+    margin: 0;
+    padding: 0;
+}
+.github-profile-joindate{
+    margin-top: 5px;
+    font-size: 14px;
+}
+.github-profile-username{
+    font-size: 12px;
+    font-weight: 600;
+    /* margin: 5px 0px; */
+}
+
+.github-profile-bio{
+    margin: 10px 0px;
+    line-height: 25px;
+    font-size: 15px;
+    letter-spacing: .5px;
+}
+.repo-follow{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 10px;
+    /* background-color: rgba(114, 119, 76, 0.800); */
+    box-shadow: 0px 0px 5px 0px grey;
+    border-radius: 10px;
+}
+.repo-follow-info{
+    width: 33.33%;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+}
+.repo-follow-name{
+    font-size: 12px;
+    margin-bottom: 0px;
+    margin-top: -5px;
+    font-weight: 500;
+}
+.repo-follow-number{
+    margin-top: 10px;
+    font-weight: 900;
+}
+.github-data-misc{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+.github-data-misc div{
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0px;
+    width: 50%;
+}
+.github-data-misc div i{
+    width: 15px;
+    margin-right: 10px;
+}
+.github-data-misc div p{
+    font-size: 13px;
+}
+
+@media screen and (max-width: 600px){
+	.wrapper{
+		width: 300px;
+	}
+	.github-data-misc{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 10px;
+	}
+	.github-data-misc div{
+			width: 100%;
+	}
+	.form wrapper form i{
+    width: 10px;
+    height: 10px;
+}
+	.form-wrapper form input{
+    width: 200px;
+    height: 30px;
+    
+}
+
+	.form-wrapper form button{
+    width: 60px;
+    height: 30px;
+	}
+
+}
