@@ -86,13 +86,13 @@ function btn(e){
 
 modeSwitch.addEventListener("click", function(){
     body.classList.toggle("body");
-    formWrapper.classList.toggle("shadow");
-    formWrapper.classList.toggle("darkmode-wrapper");
+    form.classList.toggle("shadow");
+    form.classList.toggle("darkmode-wrapper");
     div.classList.toggle("darkmode-wrapper");
     formValue.classList.toggle("input-color-change");
     //div.classList.toggle("shadow");      
     formValue.classList.toggle("darkmode-input");
-    formBtn.classList.toggle("darkmode-button");
+    // formBtn.classList.toggle("darkmode-button");
     modeIndicator.innerText === "DARK"? modeIndicator.innerText = "LIGHT": modeIndicator.innerText = "DARK";
 })
 formBtn.removeEventListener("click", btn);
