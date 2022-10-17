@@ -97,7 +97,7 @@ body{
 .form-btn{
     width: 20%; 
     height: 30px;
-    background-color: royalblue;
+    background-color: rgba(65, 105, 225, 1);
     border: none;
     border-radius: 10px;
     outline: none;
@@ -111,7 +111,7 @@ body{
     border: none;
 }
 .form-wrapper form button:hover{
-    background-color: blue;
+    background-color: rgb(0, 0, 146);
     color: aliceblue;
 }
 
@@ -223,10 +223,11 @@ body{
     width: 50%;
 }
 .github-data-misc div i{
-    width: 15px;
-    margin-right: 10px;
+    width: 10%;
 }
 .github-data-misc div p{
+    width: 90%;
+    word-wrap: break-word;
     font-size: 13px;
 }
 
